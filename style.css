@@ -3,19 +3,15 @@
 }
 
 body {
-    margin: 0;
     background-color: #212931;
-    font-family: Merriweather, Georgia, serif;
-    font-style: normal;
-    min-height: 560vh;
+    max-width: 100%;
+    height: 400vh;
 }
 #header {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    position: relative;
-    top: 325px;
     color: white;
     padding: 10px;
 }
@@ -26,7 +22,6 @@ body {
 #headerh1 {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-size: 70px;
-    font-style: normal;
 }
 #button {
     text-decoration: none;
@@ -50,54 +45,82 @@ body {
 #main-template {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: auto;
-    width: 70%;
-    height: 460vh;
-    background-color: white;
     position: relative;
-    top: 430px;
-    overflow: clip;
+    max-width: 70%;
+    height: 95%;
+    top: 5%;
+    background-color: white;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #nav-bar {
     display: flex;
     flex-direction: row;
     position: absolute;
-    background: #424649;
     text-align: center;
     top: 0;
     width: 100%;
     height: 70px;
+    background: #424649;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; 
 }
 
 #nav-bar1 {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
 }
 
 #nav-bar2 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end ;
-    width: 50%;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .nav-link {
-    display: block;
     text-align: center;
     text-decoration: none;
-    padding: 26px;
+    padding: 25px;
     color: white;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: Arial;
+    transition: 0.5s ;
 }
 
-.nav-link:hover {
-    background:white;
+#nav-text {
+    text-align: center;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    font-family: Arial;
+    transition: 0.5s ;
+    border-top-left-radius: 20px;
+}
+
+#nav-text:hover {
+    background-color:white;
     color: black;
 }
 
+#nav-text:focus {
+    background-color:white;
+    color: black;
+}
+
+.nav-link:hover {
+    background-color:white;
+    color: black;
+}
+.nav-link:focus {
+    background-color:white;
+    color: black;
+ 
+}
 
 #nav-icon-twitter {
     display:block;
@@ -108,9 +131,6 @@ body {
     padding: 25px;
 }
 
-#nav-icon-twitter:hover, #nav-icon-twitter:active {
-    color: lightblue;
-}
 #nav-icon-facebook {
     display:block;
     color: white;
@@ -120,9 +140,6 @@ body {
     padding: 25px;
 }
 
-#nav-icon-facebook:hover, #nav-icon-facebook:active {
-    color: rgb(86, 86, 207);
-}
 #nav-icon-insta {
     display: block;
     color: white;
@@ -132,9 +149,6 @@ body {
     padding: 25px;
 }
 
-#nav-icon-insta:hover {
-    color: #8a3ab9;
-}
 
 #nav-icon-github {
     display: block;
@@ -169,7 +183,6 @@ body {
 #headline {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     position: absolute;
     top: 300px;
@@ -191,32 +204,37 @@ body {
 #headline-img {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-top: 30px;
     margin: auto;
-    max-width: 80%;
-    max-height: auto;
+    width: 80%;
+    height: auto;
 }
 
-#button1a {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+.button1 {
     padding-top: 100px;
 }
 
 #button1 {
     background-color: white;
+    transition: 0.5s;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 16px;
     border: 2px solid;
+    
+}
+
+#button1:hover {
+background-color: black;
+color: white;
+border-color: lightgrey;
 }
 
 #button2 {
     background-color: white;
+    transition: 0.5s;
     padding-left: 26px;
     padding-right: 26px;
     padding-top: 15px;
@@ -224,6 +242,13 @@ body {
     font-size: 16px;
     border: 2px solid;
     margin-top: 15px;
+    
+}
+
+#button2:hover {
+    background-color: black;
+    color: white;
+    border-color: lightgrey;
 }
 
 #main-content {
@@ -256,7 +281,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     padding: 45px;
-    min-width:50%;
+    width:50%;
     border-right: 1px solid rgb(219, 219, 219);
     border-bottom: 2px solid rgb(219, 219, 219);
     border-top: 2px solid rgb(219, 219, 219);
@@ -267,7 +292,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     padding: 45px;
-    min-width:50%;
+    width:50%;
+    height: auto;
     border-left: 1px solid rgb(219, 219, 219);
     border-bottom: 2px solid rgb(219, 219, 219);
     border-top: 2px solid rgb(219, 219, 219);
@@ -283,7 +309,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     padding: 45px;
-    min-width:50%;
+    width:50%;
+    height: auto;
     border-right: 1px solid rgb(219, 219, 219);
     border-bottom: 2px solid rgb(219, 219, 219);
 }
@@ -293,7 +320,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     padding: 45px;
-    min-width:50%;
+    width:50%;
+    height: auto;
     border-left: 1px solid rgb(219, 219, 219);
     border-bottom: 2px solid rgb(219, 219, 219);
 }
@@ -308,7 +336,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     padding: 45px;
-    min-width:50%;
+    width:50%;
+    height: auto;
     border-right: 1px solid rgb(219, 219, 219);
     border-bottom: 2px solid rgb(219, 219, 219);
 }
@@ -318,223 +347,57 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
     padding: 45px;
-    min-width:50%;
+    width:50%;
+    height: auto;
     border-left: 1px solid rgb(219, 219, 219);
     border-bottom: 2px solid rgb(219, 219, 219);
 }
 
-#page-number-container {
+.page-number-container {
     display: flex;
     position: absolute;
-    top: 3690px;
+    top: 97%;
     background-color: white;
     border: 1px solid rgb(219, 219, 219);
+    max-width: auto;
+    height: auto;
 }
 
 .page-number {
     display: flex;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    text-align: center;
     font-size: 16px;
     background-color: white;
-    padding: 13px 15px;
-    border-left: 1px solid rgb(219, 219, 219);
-    border-right: 1px solid rgb(219, 219, 219);
-    border-top: 1px solid rgb(219, 219, 219);
-    border-bottom: 1px solid rgb(219, 219, 219);
+    padding: 15px 15px;
+    border: 1px solid rgb(219, 219, 219);
     color: black;
-    min-width: 40px;
-    min-height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 
 .page-number:focus {
     background-color: rgb(235, 235, 235);
-    cursor: pointer;
 }
 
 #next-button {
+    display: flex;
     border-right: 1px solid rgb(219, 219, 219);
     text-decoration: none;
-    padding: 13px;
+    padding: 15px;
     color: black;
     width: 100px;
     text-align: left;
+    transition: 0.5s;
 }
 
 #next-icon {
     padding-left: 7px;
-    transition: 0.5s;
 }
 
-#next-icon:hover {
-    padding-left: 15px;
+#next-button:hover {
+padding-left: 20px;
 }
 
-#main-footer {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-#footer1 {
-    background-color: rgb(240, 240, 240);
-    min-width: 50%;
-    height: auto;
-    padding: 50px;
-    border-right: 1px solid rgb(219, 219, 219);
-}
-
-Label {
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-    padding-bottom: 20px;
-}
-
-#Name {
-    display: flex;
-    justify-content: center;
-    border: 2px solid rgb(219, 219, 219);
-    background-color: rgb(240, 240, 240);
-    width: 100%;
-    height: 40px;
-    outline: none;
-}
-
-#Email {
-    display: flex;
-    justify-content: center;
-    border: 2px solid rgb(219, 219, 219);
-    background-color: rgb(240, 240, 240);
-    width: 100%;
-    height: 40px;
-    outline: none;
-}
-
-#Message {
-    display: flex;
-    justify-content: center;
-    border: 2px solid rgb(219, 219, 219);
-    background-color: rgb(240, 240, 240);
-    width: 100%;
-    height: 150px;
-    outline: none;
-    resize: both;
-    overflow: auto;
-    font:message-box;
-    text-decoration: none;
-}
-
-#submit {
-    padding: 15px;
-    border: 2px solid grey;
-    color: grey;
-}
-
-#footer2 {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(240, 240, 240);
-    width: 50%;
-    height: auto;
-    padding: 3px;
-    border-left: 1px solid rgb(219, 219, 219);
-}
-
-#footer21 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 150px;
-    padding: 35px;
-    border-bottom: 2px solid rgb(219, 219, 219);
-    color: grey;
-}
-
-#footer21a {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 30px;
-}
-
-#footer22 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 35px;
-    border-bottom: 2px solid rgb(219, 219, 219);
-    width: 100%;
-    height: 150px;
-    color: grey;
-}
-
-#footer22a {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 30px;
-}
-
-#footer23 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 35px;
-    border-bottom: 2px solid rgb(219, 219, 219);
-    width: 100%;
-    height: 150px;
-    color: grey;
-}
-
-#footer23a {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 30px;
-}
-
-#footer24 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 35px;
-    width: 100%;
-    min-height: 150px;
-    color: grey;
-}
-
-#footer24a {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right: 30px;
-}
-
-.footer-icona {
-    border: 2px solid rgb(219, 219, 219);
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 15px;
-}
-
-#fb {
-    border-radius: 50%;
-    padding-top: 10px;
-    padding-left: 13px;
-    padding-right: 13px;
-}
-
-#credit {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: -470px;
-    color: grey;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.credit-text {
-    padding-right: 20px;
-    margin-right: 20px;
-    border-right: 2px solid grey;
-}
-
-#demo {
-    border: none;
-}

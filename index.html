@@ -2,13 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/9872bf6952.js" crossorigin="anonymous"></script>
 		<title>Test Project</title>
 	</head>
     <body>
-        <div id="wrapper">
         <div id="header">
             <div id="header-text">
         <h1 id="headerh1">THIS IS<br>A TEST PROJECT</h1>
@@ -19,9 +17,9 @@
         <div id="main-template">
              <div id="nav-bar">
                  <div id="nav-bar1">
-                <a class="nav-link" class="nav-text" href="#1"><strong>THIS IS MASSIVELY</strong></a>
-                <a class="nav-link" class="nav-text" href="#2"><strong>GENERIC PAGE</strong></a>
-                <a class="nav-link" class="nav-text" href="#3"><strong>ELEMENTS REFERENCE</strong></a>
+                <a id="nav-text" href="#1"><strong>THIS IS MASSIVELY</strong></a>
+                <a class="nav-link" href="#2"><strong>GENERIC PAGE</strong></a>
+                <a class="nav-link" href="#3"><strong>ELEMENTS REFERENCE</strong></a>
                 </div>
                 <div id="nav-bar2">
                 <i class="fa-brands fa-twitter" class="nav-icon" id="nav-icon-twitter"></i>
@@ -38,7 +36,7 @@
                 <h1 id="headlineh1">AND THIS IS A<br>MASSIVE HEADLINE</h1>
                 <em><p>Aenean ornare velit lacus enim ullamcorper proin aliquam<br>facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br>amet nullam sed etiam veroeros</p></em>
                 <img id="headline-img" src="https://cdn.glitch.global/dd778463-1532-4cb4-94d9-51fb4124a66c/maxresdefault%20(1).jpg?v=1656581479516">
-                <div id="button1a">
+                <div class="button1">
                     <button id="button1"><strong>FULL STORY</strong></button>
                 </div>
                 </div>
@@ -93,7 +91,7 @@
                                 </div>
                         </div>
             </div>
-            <div id="page-number-container">
+            <div class="page-number-container">
                 <a class="page-number" href="#1"><strong>1</strong></a>
                 <a class="page-number" href="#2"><strong>2</strong></a>
                 <a class="page-number" href="#3"><strong>3</strong></a>
@@ -102,47 +100,7 @@
                 <a class="page-number" href="#9"><strong>9</strong></a>
                 <a class="page-number" href="#10"><strong>10</strong></a>
                 <a class="page-number" id="next-button" href="#next-page"><strong>NEXT<i class="fa-solid fa-chevron-right" id="next-icon"></i></strong></a>
-            </div>        
-            <div id="main-footer">
-                <div id="footer1">
-                    <form method="post">
-                        <label for="Name"><strong>NAME</strong></label><br><br>
-                        <input type="text"  id="Name" name="Name" required><br><br>
-                        <label for="Email"><strong>EMAIL</strong></label><br><br>
-                        <input type="email" id="Email" name="Email" required><br><br>
-                        <label for="Message"><strong>MESSAGE</strong></label><br><br>
-                        <textarea id="Message"></textarea><br><br>
-                        <input type="submit" name="submit" value="SEND MESSAGE" id="submit">
-                        </form>
-                    </div>
-                    <div id="footer2">
-                        <div id="footer21">
-                            <h4 id="footer21a">ADDRESS</h4>
-                            <p>1234 Somewhere Road #2412<br><br>Nashville, TN 00000-0000</p>
-                        </div>
-                        <div id="footer22">
-                            <h4 id="footer22a">PHONE</h4>
-                            <p>(000)000-0000</p>
-                        </div>
-                        <div id="footer23">
-                            <h4 id="footer23a">EMAIL</h4>
-                            <p>oniantou@gmail.com</p>
-                        </div>
-                        <div id="footer24">
-                            <h4 id="footer24a">SOCIAL</h4>
-                            <i class="fa-brands fa-twitter footer-icona"></i>
-                            <i class="fa-brands fa-facebook-f footer-icona" id="fb"></i>
-                            <i class="fa-brands fa-instagram footer-icona"></i>
-                            <i class="fa-brands fa-github footer-icona"></i>
-                        </div>
-                        </div>
-            </div>        
-        </div>
-        <div id="credit">
-            <p class="credit-text"><strong>© UNTITLED </strong></p>
-            <p class="credit-text"><strong> DESIGN: HTML5 UP </strong></p>
-            <p class="credit-text" id="demo"><strong> DEMO IMAGE: UNSPLASH </strong></p>
-            </div>
+            </div>               
         </div>
         </body>
 </html>
